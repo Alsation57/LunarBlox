@@ -37,10 +37,8 @@ function  signIn(){
 function signOut(){
   auth.signOut();
   alert("Signed Out!");
-  window.open("https://lunar-blox.xyz/register", "_self")
 }
 
-//active user to homepage
 const emailDisplay = document.getElementById("email");
 
 firebase.auth().onAuthStateChanged((user)=>{
