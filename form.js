@@ -41,9 +41,12 @@ function signOut(){
 }
 
 //active user to homepage
+const emailDisplay = document.getElementById("email");
+
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     var email = user.email;
+    emailDisplay.innerText = email;
   }else{
       
   }
