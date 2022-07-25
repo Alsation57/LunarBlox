@@ -45,7 +45,7 @@ firebase.auth().onAuthStateChanged((user)=>{
     var email = user.email;
 
   }else{
-    alert("error")
+    alert("error..")
       
   }
 })
