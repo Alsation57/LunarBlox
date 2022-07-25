@@ -28,7 +28,7 @@ function  signIn(){
   var email = document.getElementById("email");
   var password  = document.getElementById("password");
   const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-  window.open("https://lunar-blox.xyz/dashboard")
+  window.open("https://lunar-blox.xyz/dashboard", "_self")
 }
 
 
