@@ -21,6 +21,7 @@ const firebaseConfig = {
     //
     promise.catch(e=>alert(e.message));
     alert("SignUp Successfully");
+    window.open("https://lunar-blox.xyz/dashboard", "_self")
   }
 
   //signIN function
