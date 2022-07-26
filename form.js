@@ -21,7 +21,7 @@ function signUp(){
   //
   promise.catch(e=>alert(e.message));
   alert("SignUp Successfully");
-  window.open("https://lunar-blox.xyz/dashboard.html", "_self")
+  window.open("https://lunar-blox.xyz/dashboard", "_self")
 }
 
 //signIN function
@@ -29,7 +29,7 @@ function  signIn(){
   var email = document.getElementById("email");
   var password  = document.getElementById("password");
   const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-  window.open("https://lunar-blox.xyz/dashboard.html", "_self")
+  window.open("https://lunar-blox.xyz/dashboard", "_self")
 }
 
 
