@@ -46,7 +46,7 @@ firebase.auth().onAuthStateChanged((user)=>{
     var email = user.email;
 
   }else{
-    alert("error..")
+    window.open("https://lunar-blox.xyz/login", "_self")
       
   }
 })
