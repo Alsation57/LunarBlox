@@ -52,8 +52,7 @@ firebase.auth().onAuthStateChanged((user)=>{
     window.open("https://lunar-blox.xyz/dashboard.html", "_self")
     canOnlyFireOnce()
   }else{
-    window.open("https://lunar-blox.xyz/login.html", "_self")
-    canOnlyFireOnce()
+
   }
 })
   }
