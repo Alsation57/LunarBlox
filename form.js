@@ -43,7 +43,7 @@ function signOut(){
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     var email = user.email;
-    window.open("https://lunar-blox.xyz/dashboard.html", "_self");
+    window.open("https://lunar-blox.xyz/dashboard.html", "_self")
   }else{
       
   }
