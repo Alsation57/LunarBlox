@@ -29,6 +29,7 @@ function  signIn(){
   var email = document.getElementById("email");
   var password  = document.getElementById("password");
   const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+  window.open("https://lunar-blox.xyz/dashboard.html", "_self")
 }
 
 
@@ -43,9 +44,8 @@ function signOut(){
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     var email = user.email;
-    window.open("https://lunar-blox.xyz/dashboard.html", "_self")
-    canOnlyFireOnce()
+    
   }else{
-  alert("no acc")
+    
   }
 })
