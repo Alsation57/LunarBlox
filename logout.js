@@ -18,3 +18,7 @@ function signOut(){
   auth.signOut();
   alert("Signed Out!");
 }
+
+function buy(){
+  alert("Coming Soon!");
+}
