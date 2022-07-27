@@ -40,14 +40,12 @@ function signOut(){
 }
 
 //active user to homepage
-const emailDisplay = document.getElementById("emailDisplay");
 
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
+    var email = user.email;
     window.open("https://lunar-blox.xyz/dashboard.html", "_self");
     canOnlyFireOnce()
-    var email = user.email;
-    emailDisplay.innerText = email;
   }else{
       
   }
