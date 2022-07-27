@@ -20,7 +20,7 @@ function signUp(){
   const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
   //
   promise.catch(e=>alert(e.message));
-  alert("SignUp Successfully");
+  alert("Account Created!");
   window.open("https://lunar-blox.xyz/dashboard.html", "_self")
 }
 
@@ -36,7 +36,7 @@ function  signIn(){
 
 function signOut(){
   auth.signOut();
-  alert("Signed Out!");
+  alert("Logged out!");
 }
 
 //active user to homepage
