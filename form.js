@@ -44,10 +44,10 @@ const emailDisplay = document.getElementById("emailDisplay");
 
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
-    var email = user.email;
-    emailDisplay.innerText = email;
     window.open("https://lunar-blox.xyz/dashboard.html", "_self");
     canOnlyFireOnce()
+    var email = user.email;
+    emailDisplay.innerText = email;
   }else{
       
   }
