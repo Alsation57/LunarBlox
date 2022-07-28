@@ -1,3 +1,3 @@
 function mail(){
-  alert("News Leter: Coming Soon!")
+  alert("News Letter: Coming Soon!")
 }
