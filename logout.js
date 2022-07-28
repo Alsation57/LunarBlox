@@ -12,6 +12,9 @@ firebase.initializeApp(firebaseConfig);
 
 const auth =  firebase.auth();
 
+function uname(){
+  window.open("https://lunar-blox.xyz/dashboard", "_self")
+}
 //signOut
 
 function signOut(){
@@ -22,3 +25,15 @@ function signOut(){
 function buy(){
   alert("Coming Soon!");
 }
+
+const balanceDisplay = document.getElementById("bal");
+const uname = document.getElementById("cname")
+
+firebase.auth().onAuthStateChanged((user)=>{
+  if(user){
+    var email = uname;
+    balanceDisplay.innerText = email;
+  }else{
+      
+  }
+})
